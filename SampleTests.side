@@ -1,0 +1,93 @@
+{
+  "id": "1082d195-9fd3-434c-83e7-3f3d6520b334",
+  "version": "2.0",
+  "name": "Presentation",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "261492d8-bc12-4917-9ab8-3322406a244f",
+    "name": "Test1",
+    "commands": [{
+      "id": "17bd05de-cb8b-4697-a84e-f03fcc5d9d3b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eab19549-86a4-4870-9861-e0948bfb656e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7369d969-f40f-4f48-a3c5-d94baab092ab",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c113a5be-c123-42d4-b21b-52d5451460aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "pancakes"
+    }, {
+      "id": "434fd706-13ce-4c2d-93f9-9bb1c6c7b886",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ebd1b36d-d182-4a13-8280-d6993e542b03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bkWMgd:nth-child(2) .g:nth-child(1) .LC20lb",
+      "targets": [
+        ["css=.bkWMgd:nth-child(2) .g:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div[2]/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Good Old Fashioned Pancakes Recipe - Allrecipes.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36fa444c-5911-4fb9-880c-697df30b765c",
+      "comment": "",
+      "command": "",
+      "target": "id=recipe-main-content",
+      "targets": [],
+      "value": "Good Old Fashioned Pancakes"
+    }]
+  }],
+  "suites": [{
+    "id": "4ea0671b-6c9f-4f9e-9514-95915c6a3fb4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["261492d8-bc12-4917-9ab8-3322406a244f"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

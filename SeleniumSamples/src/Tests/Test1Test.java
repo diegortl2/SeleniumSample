@@ -19,7 +19,6 @@ public class Test1Test {
   JavascriptExecutor js;
   @Before
   public void setUp() {
-	System.setProperty("webdriver.chrome.driver", "C:/WebDriver/bin/chromedriver.exe");
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
